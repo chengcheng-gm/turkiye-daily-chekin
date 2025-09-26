@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="tr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>STAFF DOCS - Checagem Semanal</title>
+    <title>STAFF DOCS - Haftalık Kontrol</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
     <style>
@@ -298,115 +298,115 @@
 <body>
     <div class="main-content-wrapper">
         <div class="grid-container">
-            <div class="grid-header header-blue">Geral (General)</div>
-            <div class="grid-header header-lightgreen">Semanalmente (Weekly)</div>
-            <div class="grid-header header-orange">Atividades da semana (Weekly Activities)</div>
-            <div class="grid-header header-lightblue">Eventos (Events)</div>
+            <div class="grid-header header-blue">Genel (General)</div>
+            <div class="grid-header header-lightgreen">Haftalık (Weekly)</div>
+            <div class="grid-header header-orange">Haftalık Aktiviteler (Weekly Activities)</div>
+            <div class="grid-header header-lightblue">Etkinlikler (Events)</div>
 
             <div class="grid-cell cell-general-yellow">
-                <button type="button" class="clear-all-button" id="clearAllCheckboxesButton">Desmarcar Todas</button>
+                <button type="button" class="clear-all-button" id="clearAllCheckboxesButton">Tümünü İşaretini Kaldır</button>
 
                 <div class="first-column-box">
                     <label class="checkbox-label">
-                        Esta lista é para referência do que deve ser checado semanalmente. (This list is for reference of what should be checked on a weekly basis.)
+                        Bu liste, haftalık olarak kontrol edilmesi gerekenler için bir referanstır. (This list is for reference of what should be checked on a weekly basis.)
                         </label>
                     </div>
             </div>
 
             <div class="grid-cell cell-list-item">
                 <ul>
-                    <li><label class="checkbox-label"><input type="checkbox" id="chk_semanal_event_entry"> Novos Servers <input type="date" class="date-picker" id="date_semanal_event_entry"></label></li>
-                    <li><label class="checkbox-label"><input type="checkbox" id="chk_semanal_event_entry"> Entrada de eventos (Event Entry)<input type="date" class="date-picker" id="date_semanal_event_entry"></label></li>
-                    <li><label class="checkbox-label"><input type="checkbox" id="chk_semanal_vip_discount"> Desconto VIP (VIP Discount)<input type="date" class="date-picker" id="date_semanal_vip_discount"></label></li>
-                    <li><label class="checkbox-label"><input type="checkbox" id="chk_semanal_pact_discount"> Desconto Pacto (Pact Discount)<input type="date" class="date-picker" id="date_semanal_pact_discount"></label></li>
-                    <li><label class="checkbox-label"><input type="checkbox" id="chk_semanal_figures"> Figuras (Figures)<input type="date" class="date-picker" id="date_semanal_figures"></label></li>
-                    <li><label class="checkbox-label"><input type="checkbox" id="chk_semanal_ammo_sale"> Venda de Munição (Ammo Sale)<input type="date" class="date-picker" id="date_semanal_ammo_sale"></label></li>
-                    <li><label class="checkbox-label"><input type="checkbox" id="chk_semanal_limited_event"> Evento Limitado (Limited Event)<input type="date" class="date-picker" id="date_semanal_limited_event"></label></li>
-                    <li><label class="checkbox-label"><input type="checkbox" id="chk_semanal_recharge"> - Recarga (Recharge)<input type="date" class="date-picker" id="date_semanal_recharge"></label></li>
-                    <li><label class="checkbox-label"><input type="checkbox" id="chk_semanal_consumption"> - Consumo (Consumption)<input type="date" class="date-picker" id="date_semanal_consumption"></label></li>
-                    <li><label class="checkbox-label"><input type="checkbox" id="chk_semanal_mount"> - Montaria (Mount)<input type="date" class="date-picker" id="date_semanal_mount"></label></li>
-                    <li><label class="checkbox-label"><input type="checkbox" id="chk_semanal_temple"> - Templo (Temple)<input type="date" class="date-picker" id="date_semanal_temple"></label></li>
-                    <li><label class="checkbox-label"><input type="checkbox" id="chk_semanal_estimate_treasure"> - Estime tesouro (Estimate Treasure)<input type="date" class="date-picker" id="date_semanal_estimate_treasure"></label></li>
-                    <li><label class="checkbox-label"><input type="checkbox" id="chk_semanal_recharge_master"> - Mestre de Recarga (Recharge Master)<input type="date" class="date-picker" id="date_semanal_recharge_master"></label></li>
-                    <li><label class="checkbox-label"><input type="checkbox" id="chk_semanal_check_quantities_1"> - Checar quantidades (Check Quantities)<input type="date" class="date-picker" id="date_semanal_check_quantities_1"></label></li>
-                    <li><label class="checkbox-label"><input type="checkbox" id="chk_semanal_consumption_master"> - Mestre de Consumo (Consumption Master)<input type="date" class="date-picker" id="date_semanal_consumption_master"></label></li>
-                    <li><label class="checkbox-label"><input type="checkbox" id="chk_semanal_check_quantities_2"> - Checar quantidades (Check Quantities)<input type="date" class="date-picker" id="date_semanal_check_quantities_2"></label></li>
-                    <li><label class="checkbox-label"><input type="checkbox" id="chk_semanal_new_missions"> Novas Missões (New Missions)<input type="date" class="date-picker" id="date_semanal_new_missions"></label></li>
-                    <li><label class="checkbox-label"><input type="checkbox" id="chk_semanal_coupons_collecting"> Coletas de Cupons (Cupons Collecting)<input type="date" class="date-picker" id="date_semanal_coupons_collecting"></label></li>
+                    <li><label class="checkbox-label"><input type="checkbox" id="chk_semanal_event_entry"> Yeni Sunucular <input type="date" class="date-picker" id="date_semanal_event_entry"></label></li>
+                    <li><label class="checkbox-label"><input type="checkbox" id="chk_semanal_event_entry"> Etkinlik Girişi (Event Entry)<input type="date" class="date-picker" id="date_semanal_event_entry"></label></li>
+                    <li><label class="checkbox-label"><input type="checkbox" id="chk_semanal_vip_discount"> VIP İndirimi (VIP Discount)<input type="date" class="date-picker" id="date_semanal_vip_discount"></label></li>
+                    <li><label class="checkbox-label"><input type="checkbox" id="chk_semanal_pact_discount"> Pakt İndirimi (Pact Discount)<input type="date" class="date-picker" id="date_semanal_pact_discount"></label></li>
+                    <li><label class="checkbox-label"><input type="checkbox" id="chk_semanal_figures"> Figürler (Figures)<input type="date" class="date-picker" id="date_semanal_figures"></label></li>
+                    <li><label class="checkbox-label"><input type="checkbox" id="chk_semanal_ammo_sale"> Mühimmat İndirimi (Ammo Sale)<input type="date" class="date-picker" id="date_semanal_ammo_sale"></label></li>
+                    <li><label class="checkbox-label"><input type="checkbox" id="chk_semanal_limited_event"> Sınırlı Etkinlik (Limited Event)<input type="date" class="date-picker" id="date_semanal_limited_event"></label></li>
+                    <li><label class="checkbox-label"><input type="checkbox" id="chk_semanal_recharge"> - Yükleme (Recharge)<input type="date" class="date-picker" id="date_semanal_recharge"></label></li>
+                    <li><label class="checkbox-label"><input type="checkbox" id="chk_semanal_consumption"> - Tüketim (Consumption)<input type="date" class="date-picker" id="date_semanal_consumption"></label></li>
+                    <li><label class="checkbox-label"><input type="checkbox" id="chk_semanal_mount"> - Binek (Mount)<input type="date" class="date-picker" id="date_semanal_mount"></label></li>
+                    <li><label class="checkbox-label"><input type="checkbox" id="chk_semanal_temple"> - Tapınak (Temple)<input type="date" class="date-picker" id="date_semanal_temple"></label></li>
+                    <li><label class="checkbox-label"><input type="checkbox" id="chk_semanal_estimate_treasure"> - Tahmini Hazine (Estimate Treasure)<input type="date" class="date-picker" id="date_semanal_estimate_treasure"></label></li>
+                    <li><label class="checkbox-label"><input type="checkbox" id="chk_semanal_recharge_master"> - Yükleme Ustası (Recharge Master)<input type="date" class="date-picker" id="date_semanal_recharge_master"></label></li>
+                    <li><label class="checkbox-label"><input type="checkbox" id="chk_semanal_check_quantities_1"> - Miktarları Kontrol Et (Check Quantities)<input type="date" class="date-picker" id="date_semanal_check_quantities_1"></label></li>
+                    <li><label class="checkbox-label"><input type="checkbox" id="chk_semanal_consumption_master"> - Tüketim Ustası (Consumption Master)<input type="date" class="date-picker" id="date_semanal_consumption_master"></label></li>
+                    <li><label class="checkbox-label"><input type="checkbox" id="chk_semanal_check_quantities_2"> - Miktarları Kontrol Et (Check Quantities)<input type="date" class="date-picker" id="date_semanal_check_quantities_2"></label></li>
+                    <li><label class="checkbox-label"><input type="checkbox" id="chk_semanal_new_missions"> Yeni Görevler (New Missions)<input type="date" class="date-picker" id="date_semanal_new_missions"></label></li>
+                    <li><label class="checkbox-label"><input type="checkbox" id="chk_semanal_coupons_collecting"> Kupon Toplama (Coupons Collecting)<input type="date" class="date-picker" id="date_semanal_coupons_collecting"></label></li>
                 </ul>
             </div>
             <div class="grid-cell cell-list-item">
                 <ul>
-                    <li><label class="checkbox-label"><input type="checkbox" id="chk_atividades_budai"> Deus da Fortuna (Budai) (God of Fortune - Buddha)<input type="date" class="date-picker" id="date_atividades_budai"></label></li>
-                    <li><label class="checkbox-label"><input type="checkbox" id="chk_atividades_treasure"> Tesouro do Diabo (Devil's Treasure)<input type="date" class="date-picker" id="date_atividades_treasure"></label></li>
-                    <li><label class="checkbox-label"><input type="checkbox" id="chk_atividades_popfull"> Pop-full (Dream Dungeon)<input type="date" class="date-picker" id="date_atividades_popfull"></label></li>
-                    <li><label class="checkbox-label"><input type="checkbox" id="chk_atividades_adventure"> Aventura (Adventure)<input type="date" class="date-picker" id="date_atividades_adventure"></label></li>
-                    <li><label class="checkbox-label"><input type="checkbox" id="chk_atividades_shooting_balloons"> Balões de Atrar fogos (balões) (Shooting Balloons (balloons))<input type="date" class="date-picker" id="date_atividades_balloons"></label></li>
-                    <li><label class="checkbox-label"><input type="checkbox" id="chk_atividades_puzzle"> Quebra-cabeça (Puzzle)<input type="date" class="date-picker" id="date_atividades_puzzle"></label></li>
-                    <li><label class="checkbox-label"><input type="checkbox" id="chk_atividades_lucky_star"> Estrela da sorte (Lucky Star)<input type="date" class="date-picker" id="date_atividades_lucky_star"></label></li>
-                    <li><label class="checkbox-label"><input type="checkbox" id="chk_atividades_dd_destiny"> DD Destino (DD Destiny)<input type="date" class="date-picker" id="date_atividades_dd_destiny"></label></li>
-                    <li><label class="checkbox-label"><input type="checkbox" id="chk_atividades_wheel_of_destiny"> Roda do Destino (Wheel of Destiny)<input type="date" class="date-picker" id="date_atividades_wheel_of_destiny"></label></li>
-                    <li><label class="checkbox-label"><input type="checkbox" id="chk_atividades_ddt_delight"> DDT Delícia (DDT Delight)<input type="date" class="date-picker" id="date_atividades_ddt_delight"></label></li>
-                    <li><label class="checkbox-label"><input type="checkbox" id="chk_atividades_flower_event"> Evento das Flores (Flower Event)<input type="date" class="date-picker" id="date_atividades_flower_event"></label></li>
-                    <li><label class="checkbox-label"><input type="checkbox" id="chk_atividades_chaos_insects"> Caos Insetos (Chaos Insects)<input type="date" class="date-picker" id="date_atividades_chaos_insects"></label></li>
-                    <li><label class="checkbox-label"><input type="checkbox" id="chk_atividades_sacred_card"> Cartão Sagrado (cartas) (Sacred Card)<input type="date" class="date-picker" id="date_atividades_sacred_card"></label></li>
-                    <li><label class="checkbox-label"><input type="checkbox" id="chk_atividades_dd_lottery"> DD Loteria (DD Lottery)<input type="date" class="date-picker" id="date_atividades_dd_lottery"></label></li>
-                    <li><label class="checkbox-label"><input type="checkbox" id="chk_atividades_joyful_ddt"> DDT Alegre (Joyful DDT)<input type="date" class="date-picker" id="date_atividades_joyful_ddt"></label></li>
-                    <li><label class="checkbox-label"><input type="checkbox"> Pirâmides (Pirámides)<input type="date" class="date-picker" id="date_atividades_pyramids"></label></li>
-                    <li><label class="checkbox-label"><input type="checkbox"> Fazenda (Farm)<input type="date" class="date-picker" id="date_atividades_farm"></label></li>
-                    <li><label class="checkbox-label"><input type="checkbox"> Masmorra (Dungeon)<input type="date" class="date-picker" id="date_atividades_dungeon"></label></li>
-                    <li><label class="checkbox-label"><input type="checkbox"> Em pares (In pairs)<input type="date" class="date-picker" id="date_atividades_em_pares"></label></li>
-                    <li><label class="checkbox-label"><input type="checkbox" id="chk_semanal_batalha_nebulosa"> Batalha Nebulosa (Nebula Battle) <input type="date" class="date-picker" id="date_semanal_batalha_nebulosa"></label></li>
-                    <li><label class="checkbox-label"><input type="checkbox" id="chk_semanal_resgate"> Resgate (Rescue) <input type="date" class="date-picker" id="date_semanal_resgate"></label></li>
-                    <li><label class="checkbox-label"><input type="checkbox" id="chk_semanal_recarga_continua"> Recarga Contínua (Continuous Recharge) <input type="date" class="date-picker" id="date_semanal_recarga_continua"></label></li>
-                    <li><label class="checkbox-label"><input type="checkbox" id="chk_semanal_recarga_atividade"> Recarga (Atividade) (Recharge - Activity) <input type="date" class="date-picker" id="date_semanal_recarga_atividade"></label></li>
-                    <li><label class="checkbox-label"><input type="checkbox" id="chk_semanal_doacao"> Doação (Donation) <input type="date" class="date-picker" id="date_semanal_doacao"></label></li>
-                    <li><label class="checkbox-label"><input type="checkbox" id="chk_semanal_invasao_equipe"> Invasão em Equipe (Team Invasion) <input type="date" class="date-picker" id="date_semanal_invasao_equipe"></label></li>
-                    <li><label class="checkbox-label"><input type="checkbox" id="chk_semanal_medo"> Medo (Fear) <input type="date" class="date-picker" id="date_semanal_medo"></label></li>
-                    <li><label class="checkbox-label"><input type="checkbox" id="chk_semanal_arena_rei"> Arena do Rei (King's Arena) <input type="date" class="date-picker" id="date_semanal_arena_rei"></label></li>
-                    <li><label class="checkbox-label"><input type="checkbox" id="chk_semanal_campo_provas"> Campo de Provas (Proving Ground) <input type="date" class="date-picker" id="date_semanal_campo_provas"></label></li>
-                    <li><label class="checkbox-label"><input type="checkbox" id="chk_semanal_torneio"> Torneio (Tournament) <input type="date" class="date-picker" id="date_semanal_torneio"></label></li>
-                    <li><label class="checkbox-label"><input type="checkbox" id="chk_semanal_rank_atletismo"> Rank Atletismo (Athletics Rank) <input type="date" class="date-picker" id="date_semanal_rank_atletismo"></label></li>
-                    <li><label class="checkbox-label"><input type="checkbox" id="chk_semanal_artes_marciais"> Artes Marciais (Martial Arts) <input type="date" class="date-picker" id="date_semanal_artes_marciais"></label></li>
-                    <li><label class="checkbox-label"><input type="checkbox" id="chk_semanal_fundo_gestao"> Fundo de Gestão (Management Fund) <input type="date" class="date-picker" id="date_semanal_fundo_gestao"></label></li>
-                    <li><label class="checkbox-label"><input type="checkbox" id="chk_semanal_checkin"> Check-in (Check-in) <input type="date" class="date-picker" id="date_semanal_checkin"></label></li>
-                    <li><label class="checkbox-label"><input type="checkbox" id="chk_semanal_desafio_pet"> Desafio Pet (Pet Challenge) <input type="date" class="date-picker" id="date_semanal_desafio_pet"></label></li>
-                    <li><label class="checkbox-label"><input type="checkbox" id="chk_semanal_entrada_diaria"> Entrada Diária (Daily Entry) <input type="date" class="date-picker" id="date_semanal_entrada_diaria"></label></li>
+                    <li><label class="checkbox-label"><input type="checkbox" id="chk_atividades_budai"> Şans Tanrısı (Budai) (God of Fortune - Buddha)<input type="date" class="date-picker" id="date_atividades_budai"></label></li>
+                    <li><label class="checkbox-label"><input type="checkbox" id="chk_atividades_treasure"> Şeytanın Hazinesi (Devil's Treasure)<input type="date" class="date-picker" id="date_atividades_treasure"></label></li>
+                    <li><label class="checkbox-label"><input type="checkbox" id="chk_atividades_popfull"> Pop-full (Rüya Zindanı) (Dream Dungeon)<input type="date" class="date-picker" id="date_atividades_popfull"></label></li>
+                    <li><label class="checkbox-label"><input type="checkbox" id="chk_atividades_adventure"> Macera (Adventure)<input type="date" class="date-picker" id="date_atividades_adventure"></label></li>
+                    <li><label class="checkbox-label"><input type="checkbox" id="chk_atividades_shooting_balloons"> Balon Vurma (Shooting Balloons)<input type="date" class="date-picker" id="date_atividades_balloons"></label></li>
+                    <li><label class="checkbox-label"><input type="checkbox" id="chk_atividades_puzzle"> Yapboz (Puzzle)<input type="date" class="date-picker" id="date_atividades_puzzle"></label></li>
+                    <li><label class="checkbox-label"><input type="checkbox" id="chk_atividades_lucky_star"> Şans Yıldızı (Lucky Star)<input type="date" class="date-picker" id="date_atividades_lucky_star"></label></li>
+                    <li><label class="checkbox-label"><input type="checkbox" id="chk_atividades_dd_destiny"> DD Kaderi (DD Destiny)<input type="date" class="date-picker" id="date_atividades_dd_destiny"></label></li>
+                    <li><label class="checkbox-label"><input type="checkbox" id="chk_atividades_wheel_of_destiny"> Kader Çarkı (Wheel of Destiny)<input type="date" class="date-picker" id="date_atividades_wheel_of_destiny"></label></li>
+                    <li><label class="checkbox-label"><input type="checkbox" id="chk_atividades_ddt_delight"> DDT Keyfi (DDT Delight)<input type="date" class="date-picker" id="date_atividades_ddt_delight"></label></li>
+                    <li><label class="checkbox-label"><input type="checkbox" id="chk_atividades_flower_event"> Çiçek Etkinliği (Flower Event)<input type="date" class="date-picker" id="date_atividades_flower_event"></label></li>
+                    <li><label class="checkbox-label"><input type="checkbox" id="chk_atividades_chaos_insects"> Kaos Böcekleri (Chaos Insects)<input type="date" class="date-picker" id="date_atividades_chaos_insects"></label></li>
+                    <li><label class="checkbox-label"><input type="checkbox" id="chk_atividades_sacred_card"> Kutsal Kart (Sacred Card)<input type="date" class="date-picker" id="date_atividades_sacred_card"></label></li>
+                    <li><label class="checkbox-label"><input type="checkbox" id="chk_atividades_dd_lottery"> DD Piyangosu (DD Lottery)<input type="date" class="date-picker" id="date_atividades_dd_lottery"></label></li>
+                    <li><label class="checkbox-label"><input type="checkbox" id="chk_atividades_joyful_ddt"> Neşeli DDT (Joyful DDT)<input type="date" class="date-picker" id="date_atividades_joyful_ddt"></label></li>
+                    <li><label class="checkbox-label"><input type="checkbox"> Piramitler (Pirámides)<input type="date" class="date-picker" id="date_atividades_pyramids"></label></li>
+                    <li><label class="checkbox-label"><input type="checkbox"> Çiftlik (Farm)<input type="date" class="date-picker" id="date_atividades_farm"></label></li>
+                    <li><label class="checkbox-label"><input type="checkbox"> Zindan (Dungeon)<input type="date" class="date-picker" id="date_atividades_dungeon"></label></li>
+                    <li><label class="checkbox-label"><input type="checkbox"> Çiftler Halinde (In pairs)<input type="date" class="date-picker" id="date_atividades_em_pares"></label></li>
+                    <li><label class="checkbox-label"><input type="checkbox" id="chk_semanal_batalha_nebulosa"> Bulutsu Savaş (Nebula Battle) <input type="date" class="date-picker" id="date_semanal_batalha_nebulosa"></label></li>
+                    <li><label class="checkbox-label"><input type="checkbox" id="chk_semanal_resgate"> Kurtarma (Rescue) <input type="date" class="date-picker" id="date_semanal_resgate"></label></li>
+                    <li><label class="checkbox-label"><input type="checkbox" id="chk_semanal_recarga_continua"> Sürekli Yükleme (Continuous Recharge) <input type="date" class="date-picker" id="date_semanal_recarga_continua"></label></li>
+                    <li><label class="checkbox-label"><input type="checkbox" id="chk_semanal_recarga_atividade"> Yükleme (Aktivite) (Recharge - Activity) <input type="date" class="date-picker" id="date_semanal_recarga_atividade"></label></li>
+                    <li><label class="checkbox-label"><input type="checkbox" id="chk_semanal_doacao"> Bağış (Donation) <input type="date" class="date-picker" id="date_semanal_doacao"></label></li>
+                    <li><label class="checkbox-label"><input type="checkbox" id="chk_semanal_invasao_equipe"> Takım İstilası (Team Invasion) <input type="date" class="date-picker" id="date_semanal_invasao_equipe"></label></li>
+                    <li><label class="checkbox-label"><input type="checkbox" id="chk_semanal_medo"> Korku (Fear) <input type="date" class="date-picker" id="date_semanal_medo"></label></li>
+                    <li><label class="checkbox-label"><input type="checkbox" id="chk_semanal_arena_rei"> Kral Arenası (King's Arena) <input type="date" class="date-picker" id="date_semanal_arena_rei"></label></li>
+                    <li><label class="checkbox-label"><input type="checkbox" id="chk_semanal_campo_provas"> Deneme Alanı (Proving Ground) <input type="date" class="date-picker" id="date_semanal_campo_provas"></label></li>
+                    <li><label class="checkbox-label"><input type="checkbox" id="chk_semanal_torneio"> Turnuva (Tournament) <input type="date" class="date-picker" id="date_semanal_torneio"></label></li>
+                    <li><label class="checkbox-label"><input type="checkbox" id="chk_semanal_rank_atletismo"> Atletizm Sıralaması (Athletics Rank) <input type="date" class="date-picker" id="date_semanal_rank_atletismo"></label></li>
+                    <li><label class="checkbox-label"><input type="checkbox" id="chk_semanal_artes_marciais"> Dövüş Sanatları (Martial Arts) <input type="date" class="date-picker" id="date_semanal_artes_marciais"></label></li>
+                    <li><label class="checkbox-label"><input type="checkbox" id="chk_semanal_fundo_gestao"> Yönetim Fonu (Management Fund) <input type="date" class="date-picker" id="date_semanal_fundo_gestao"></label></li>
+                    <li><label class="checkbox-label"><input type="checkbox" id="chk_semanal_checkin"> Giriş (Check-in) <input type="date" class="date-picker" id="date_semanal_checkin"></label></li>
+                    <li><label class="checkbox-label"><input type="checkbox" id="chk_semanal_desafio_pet"> Evcil Hayvan Mücadelesi (Pet Challenge) <input type="date" class="date-picker" id="date_semanal_desafio_pet"></label></li>
+                    <li><label class="checkbox-label"><input type="checkbox" id="chk_semanal_entrada_diaria"> Günlük Giriş (Daily Entry) <input type="date" class="date-picker" id="date_semanal_entrada_diaria"></label></li>
                 </ul>
             </div>
             <div class="grid-cell cell-list-item">
                 <ul>
-                    <li><label class="checkbox-label"><input type="checkbox" id="chk_eventos_daily"> Entrada diária (Daily Entry)<input type="date" class="date-picker" id="date_eventos_daily"></label></li>
-                    <li><label class="checkbox-label"><input type="checkbox" id="chk_eventos_missions"> Missões (Missions)<input type="date" class="date-picker" id="date_eventos_missions"></label></li>
-                    <li><label class="checkbox-label"><input type="checkbox" id="chk_eventos_instances"> Instâncias (Instances)<input type="date" class="date-picker" id="date_eventos_instances"></label></li>
-                    <li><label class="checkbox-label"><input type="checkbox" id="chk_eventos_battles"> Combates (Battles)<input type="date" class="date-picker" id="date_eventos_battles"></label></li>
-                    <li><label class="checkbox-label"><input type="checkbox" id="chk_eventos_exchange_activity"> Atividade de troca (Exchange Activity)<input type="date" class="date-picker" id="date_eventos_exchange_activity"></label></li>
-                    <li><label class="checkbox-label"><input type="checkbox" id="chk_eventos_event_date"> - Data do evento (Event Date)<input type="date" class="date-picker" id="date_eventos_event_date"></label></li>
-                    <li><label class="checkbox-label"><input type="checkbox" id="chk_eventos_ammunition_sale"> - Venda de Munição (Ammunition Sale)<input type="date" class="date-picker" id="date_eventos_ammunition_sale"></label></li>
-                    <li><label class="checkbox-label"><input type="checkbox" id="chk_eventos_only_coupons"> - Só cupons (Cupons only)<input type="date" class="date-picker" id="date_eventos_only_coupons"></label></li>
-                    <li><label class="checkbox-label"><input type="checkbox" id="chk_eventos_coupons_and_lcoupons_2"> - Cupons e L.Cupons (Cupons and L.Cupons)<input type="date" class="date-picker" id="date_eventos_coupons_and_lcoupons_2"></label></li>
-                    <li><label class="checkbox-label"><input type="checkbox" id="chk_eventos_transformation_event_2"> - Evento de Transformação (Transformation Event)<input type="date" class="date-picker" id="date_eventos_transformation_event_2"></label></li>
-                    <li><label class="checkbox-label"><input type="checkbox" id="chk_eventos_items"> Itens (Items)<input type="date" class="date-picker" id="date_eventos_items"></label></li>
-                    <li><label class="checkbox-label"><input type="checkbox" id="chk_eventos_quantity_values"> Quantidade/ Valores (Quantity/Values)<input type="date" class="date-picker" id="date_eventos_quantity_values"></label></li>
-                    <li><label class="checkbox-label"><input type="checkbox" id="chk_eventos_coupons"> Cupons e L.Cupons (Cupons e L.Cupons)<input type="date" class="date-picker" id="date_eventos_coupons"></label></li>
-                    <li><label class="checkbox-label"><input type="checkbox" id="chk_eventos_transformation_event"> Evento de Transformação (Transformation Event)<input type="date" class="date-picker" id="date_eventos_transformation_event"></label></li>
+                    <li><label class="checkbox-label"><input type="checkbox" id="chk_eventos_daily"> Günlük Giriş (Daily Entry)<input type="date" class="date-picker" id="date_eventos_daily"></label></li>
+                    <li><label class="checkbox-label"><input type="checkbox" id="chk_eventos_missions"> Görevler (Missions)<input type="date" class="date-picker" id="date_eventos_missions"></label></li>
+                    <li><label class="checkbox-label"><input type="checkbox" id="chk_eventos_instances"> Örnekler (Instances)<input type="date" class="date-picker" id="date_eventos_instances"></label></li>
+                    <li><label class="checkbox-label"><input type="checkbox" id="chk_eventos_battles"> Savaşlar (Battles)<input type="date" class="date-picker" id="date_eventos_battles"></label></li>
+                    <li><label class="checkbox-label"><input type="checkbox" id="chk_eventos_exchange_activity"> Takas Aktivitesi (Exchange Activity)<input type="date" class="date-picker" id="date_eventos_exchange_activity"></label></li>
+                    <li><label class="checkbox-label"><input type="checkbox" id="chk_eventos_event_date"> - Etkinlik Tarihi (Event Date)<input type="date" class="date-picker" id="date_eventos_event_date"></label></li>
+                    <li><label class="checkbox-label"><input type="checkbox" id="chk_eventos_ammunition_sale"> - Mühimmat İndirimi (Ammunition Sale)<input type="date" class="date-picker" id="date_eventos_ammunition_sale"></label></li>
+                    <li><label class="checkbox-label"><input type="checkbox" id="chk_eventos_only_coupons"> - Sadece Kuponlar (Cupons only)<input type="date" class="date-picker" id="date_eventos_only_coupons"></label></li>
+                    <li><label class="checkbox-label"><input type="checkbox" id="chk_eventos_coupons_and_lcoupons_2"> - Kuponlar ve L.Kuponlar (Cupons and L.Cupons)<input type="date" class="date-picker" id="date_eventos_coupons_and_lcoupons_2"></label></li>
+                    <li><label class="checkbox-label"><input type="checkbox" id="chk_eventos_transformation_event_2"> - Dönüşüm Etkinliği (Transformation Event)<input type="date" class="date-picker" id="date_eventos_transformation_event_2"></label></li>
+                    <li><label class="checkbox-label"><input type="checkbox" id="chk_eventos_items"> Öğeler (Items)<input type="date" class="date-picker" id="date_eventos_items"></label></li>
+                    <li><label class="checkbox-label"><input type="checkbox" id="chk_eventos_quantity_values"> Miktar/Değerler (Quantity/Values)<input type="date" class="date-picker" id="date_eventos_quantity_values"></label></li>
+                    <li><label class="checkbox-label"><input type="checkbox" id="chk_eventos_coupons"> Kuponlar ve L.Kuponlar (Cupons e L.Cupons)<input type="date" class="date-picker" id="date_eventos_coupons"></label></li>
+                    <li><label class="checkbox-label"><input type="checkbox" id="chk_eventos_transformation_event"> Dönüşüm Etkinliği (Transformation Event)<input type="date" class="date-picker" id="date_eventos_transformation_event"></label></li>
                     <li><label class="checkbox-label"><input type="checkbox" id="chk_eventos_nien"> Nien (Nien)<input type="date" class="date-picker" id="date_eventos_nien"></label></li>
-                    <li><label class="checkbox-label"><input type="checkbox" id="chk_eventos_old_player_return"> Retorno Antigo Jogador (Old Player Return)<input type="date" class="date-picker" id="date_eventos_old_player_return"></label></li>
-                    <li><label class="checkbox-label"><input type="checkbox" id="chk_eventos_recharge_event"> Recarga (eventos) (Recharge - Event)<input type="date" class="date-picker" id="date_eventos_recharge_event"></label></li>
+                    <li><label class="checkbox-label"><input type="checkbox" id="chk_eventos_old_player_return"> Eski Oyuncu Geri Dönüşü (Old Player Return)<input type="date" class="date-picker" id="date_eventos_old_player_return"></label></li>
+                    <li><label class="checkbox-label"><input type="checkbox" id="chk_eventos_recharge_event"> Yükleme (Etkinlik) (Recharge - Event)<input type="date" class="date-picker" id="date_eventos_recharge_event"></label></li>
                 </ul>
             </div>
 
             <div class="updates-section cell-updates-yellow">
-                <h3>Atualizações (Updates)</h3>
+                <h3>Güncellemeler (Updates)</h3>
                 <label class="checkbox-label">
                     <input type="checkbox" id="chk_updates_1">
-                    Checar TUDO no sistema, printar e construir dois docs, um sobre o que entrou de novo e outro sobre bug/erros que foram apresentados. (Check EVERYTHING in the system, print it out and build two docs, one about what has come in new and another about bug/errors that have been displayed.)
+                    Sistemdeki HER ŞEYİ kontrol et, ekran görüntüsü al ve iki belge hazırla: biri yeni gelenler hakkında, diğeri ise karşılaşılan hatalar/böcekler hakkında. (Check EVERYTHING in the system, print it out and build two docs, one about what has come in new and another about bug/errors that have been displayed.)
                     <input type="date" class="date-picker" id="date_updates_1">
                 </label>
                 <br>
                 <label class="checkbox-label">
                     <input type="checkbox" id="chk_updates_others">
-                    (Outros) (Others)
+                    (Diğerleri) (Others)
                     <input type="date" class="date-picker" id="date_updates_others">
                 </label>
             </div>
@@ -414,49 +414,49 @@
             <div class="grid-cell cell-list-item">
                 <label class="checkbox-label">
                     <input type="checkbox" id="chk_col2_others">
-                    (Outros) (Others)
+                    (Diğerleri) (Others)
                     <input type="date" class="date-picker" id="date_col2_others">
                 </label>
             </div>
             <div class="grid-cell cell-list-item">
                 <label class="checkbox-label">
                     <input type="checkbox" id="chk_col3_others">
-                    (Outros) (Others)
+                    (Diğerleri) (Others)
                     <input type="date" class="date-picker" id="date_col3_others">
                 </label>
             </div>
             <div class="grid-cell cell-list-item">
                 <label class="checkbox-label">
                     <input type="checkbox" id="chk_col4_others">
-                    (Outros) (Others)
+                    (Diğerleri) (Others)
                     <input type="date" class="date-picker" id="date_col4_others">
                 </label>
             </div>
         </div>
 
         <div class="important-points-grid">
-            <div class="points-header">Pontos importantes a se atentar:</div>
+            <div class="points-header">Dikkat Edilmesi Gereken Önemli Noktalar:</div>
             <div class="points-content">
-                <p>validade <input type="text" class="point-textbox" id="txt_validade"></p>
-                <p>preço <input type="text" class="point-textbox" id="txt_preco"></p>
-                <p>se completa <input type="text" class="point-textbox" id="txt_completa"></p>
-                <p>se reseta após relogar <input type="text" class="point-textbox" id="txt_reseta_relogar"></p>
-                <p>quantidade <input type="text" class="point-textbox" id="txt_quantidade"></p>
-                <p>limitado ou ilimitado <input type="text" class="point-textbox" id="txt_limitado"></p>
-                <p>data e data limite se estão corretas <input type="text" class="point-textbox" id="txt_data_limite_correta"></p>
-                <p>item veio conforme o doc? <input type="text" class="point-textbox" id="txt_item_doc"></p>
+                <p>geçerlilik <input type="text" class="point-textbox" id="txt_validade"></p>
+                <p>fiyat <input type="text" class="point-textbox" id="txt_preco"></p>
+                <p>tamamlanıp tamamlanmadığı <input type="text" class="point-textbox" id="txt_completa"></p>
+                <p>tekrar giriş yapıldıktan sonra sıfırlanıp sıfırlanmadığı <input type="text" class="point-textbox" id="txt_reseta_relogar"></p>
+                <p>miktar <input type="text" class="point-textbox" id="txt_quantidade"></p>
+                <p>sınırlı mı sınırsız mı <input type="text" class="point-textbox" id="txt_limitado"></p>
+                <p>tarih ve son kullanma tarihinin doğru olup olmadığı <input type="text" class="point-textbox" id="txt_data_limite_correta"></p>
+                <p>öğe belgeye göre mi geldi? <input type="text" class="point-textbox" id="txt_item_doc"></p>
             </div>
 
-            <div class="points-header">Important points to note:</div>
+            <div class="points-header">Önemli Not Edilmesi Gerekenler:</div>
             <div class="points-content">
-                <p>expiration date <input type="text" class="point-textbox" id="txt_exp_date"></p>
-                <p>price <input type="text" class="point-textbox" id="txt_price"></p>
-                <p>completeness <input type="text" class="point-textbox" id="txt_completeness"></p>
-                <p>reset after reload <input type="text" class="point-textbox" id="txt_reset_reload"></p>
-                <p>quantity <input type="text" class="point-textbox" id="txt_quantity"></p>
-                <p>limited or unlimited <input type="text" class="point-textbox" id="txt_limited_unlimited"></p>
-                <p>date and expiry date are correct <input type="text" class="point-textbox" id="txt_date_expiry_correct"></p>
-                <p>did the item come as per the doc? <input type="text" class="point-textbox" id="txt_item_as_doc"></p>
+                <p>son kullanma tarihi <input type="text" class="point-textbox" id="txt_exp_date"></p>
+                <p>fiyat <input type="text" class="point-textbox" id="txt_price"></p>
+                <p>tamamlanma durumu <input type="text" class="point-textbox" id="txt_completeness"></p>
+                <p>tekrar yüklemeden sonra sıfırlama <input type="text" class="point-textbox" id="txt_reset_reload"></p>
+                <p>miktar <input type="text" class="point-textbox" id="txt_quantity"></p>
+                <p>sınırlı veya sınırsız <input type="text" class="point-textbox" id="txt_limited_unlimited"></p>
+                <p>tarih ve bitiş tarihi doğru mu <input type="text" class="point-textbox" id="txt_date_expiry_correct"></p>
+                <p>öğe belgeye göre mi geldi? <input type="text" class="point-textbox" id="txt_item_as_doc"></p>
             </div>
         </div>
     </div>
@@ -465,9 +465,9 @@
         <select id="downloadFormat" style="padding: 8px; border-radius: 5px; margin-right: 10px;">
             <option value="json">JSON</option>
             <option value="pdf">PDF</option>
-            <option value="docx">DOCX (Básico)</option>
+            <option value="docx">DOCX (Temel)</option>
         </select>
-        <button class="download-button" id="downloadDataButton">Baixar Dados Preenchidos</button>
+        <button class="download-button" id="downloadDataButton">Doldurulan Verileri İndir</button>
     </div>
 
     <script>
@@ -786,10 +786,10 @@
 
             const htmlContent = `
                 <!DOCTYPE html>
-                <html lang="pt-BR">
+                <html lang="tr">
                 <head>
                     <meta charset="UTF-8">
-                    <title>STAFF DOCS - Checagem Semanal</title>
+                    <title>STAFF DOCS - Haftalık Kontrol</title>
                     <style>
                         /* Inclua os estilos CSS essenciais para a renderização no Word */
                         body { font-family: Arial, sans-serif; margin: 20px; }
@@ -809,7 +809,7 @@
                     </style>
                 </head>
                 <body>
-                    <h1>STAFF DOCS - Checagem Semanal</h1>
+                    <h1>STAFF DOCS - Haftalık Kontrol</h1>
                     ${clonedContent.innerHTML}
                 </body>
                 </html>
